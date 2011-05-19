@@ -47,6 +47,8 @@ static CGFloat kSSPersonHeaderViewImageSize = 64.0;
 		
 		_imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
 		_imageView.clipsToBounds = YES;
+        _imageView.contentMode = UIViewContentModeScaleAspectFit;
+        _imageView.backgroundColor = [UIColor blackColor];
 		_imageView.layer.cornerRadius = 3.0;
 		[self addSubview:_imageView];
 		[self _updateImage];
