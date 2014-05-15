@@ -5,7 +5,7 @@
 //  Created by Sam Soffes on 9/16/10.
 //  Copyright 2010 Sam Soffes. All rights reserved.
 //
-
+#import "smsConfig.h"
 #import "SSEditPersonViewController.h"
 
 @implementation SSEditPersonViewController
@@ -29,6 +29,7 @@
 	self.title = @"Edit Contact";
 	
 	UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)];
+    cancelButton.tintColor = barButtonTintColor;
 	self.navigationItem.leftBarButtonItem = cancelButton;
 	[cancelButton release];
 }
